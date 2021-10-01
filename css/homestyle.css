@@ -1,0 +1,51 @@
+.container{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+}
+  
+.flex-item1{
+    display:flex ;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 70vw;
+    height:85vh;
+    padding:0px 20px;
+    margin:0px 20px;
+    position: relative;
+    animation-name: syllabus;
+    animation-duration: 4s;
+    animation-direction: normal;
+}
+
+@keyframes syllabus {
+    0%   {left:0px; top:0px;}
+    50%  {background-color: #3b0404; left:20px; top:0px;}
+    100% {left:0px; top:0px;}
+}
+
+.heading{
+    text-align: center;
+    font-size: 30px;
+}
+
+.content{
+    font-family: 'Stick No Bills', sans-serif;
+    font-size: 23px;    
+    margin-top: 10px;
+    /* padding: 20px 10px 0px 20px; */
+  }
+
+  .flex-item2{
+    position: relative;
+    animation-name: picture;
+    animation-duration: 4s;
+    animation-direction: normal;
+  }
+
+  @keyframes picture {
+    0%   {transform: scale(0.7, 0.7);}
+    50%  {transform: scale(1, 1);}
+    100% {transform: scale(1, 1);}
+    }
